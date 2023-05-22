@@ -8,6 +8,6 @@ GRANT SELECT ON ALL TABLES IN SCHEMA misc TO :PGUSER_READ_ONLY;
 
 CREATE TABLE IF NOT EXISTS misc.versions
 (
-    "scriptName"  text,
-    "migrateTime" date
+    script_name  text,
+    migrate_time date
 );
