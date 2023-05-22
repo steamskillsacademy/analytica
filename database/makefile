@@ -30,6 +30,6 @@ bootstrap:
 	then \
 		src/bootstrap.sh; \
 	else \
-	    echo "Database already exists"; \
-        echo "Skipping bootstrap"; \
+		echo "Database already exists"; \
+		echo "Skipping bootstrap"; \
 	fi
