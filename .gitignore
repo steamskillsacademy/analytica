@@ -1,0 +1,20 @@
+# logs
+logs/
+*.log
+
+# mac files
+.DS_Store
+
+# vim swap files
+*.swp
+
+# jetbrains
+.idea/
+
+# production
+**/env*/prod*
+**/env*/test*
+
+# infrastructure files
+.terraform/
+terraform.tfstate

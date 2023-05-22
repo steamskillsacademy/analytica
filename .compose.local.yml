@@ -1,0 +1,19 @@
+services:
+  database:
+    image: analytica-database
+    container_name: analytica-database
+    hostname: analytica-database
+    build: ./database/.docker/
+    restart: always
+    environment:
+      - POSTGRES_USER=pgroot
+      - POSTGRES_PASSWORD=pgroot
+    env_file:
+      - ./database/env.runtime/local.sh
+      - ./database/env.runtime/local.pgdx.sh
+    ports:
+      - 5100:5100
+    working_dir: /analytica/database/
+    volumes:
+      - ./database/.docker/localData/:/var/lib/postgresql/data/
+      - .:/analytica/
