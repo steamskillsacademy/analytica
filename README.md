@@ -87,6 +87,10 @@ We will use feature branches. Name them accordingly:
 - test: (adding missing tests, refactoring tests; no production code change)
 - chore: (updating grunt tasks etc; no production code change)
 
+We will use kabab-case for branch names. e.g.:
+- `feat/some-feature`
+In general, names will be a part of a URL should be in kabab-case.
+
 ## Git Commit Messages
 We will use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 No need to provide excessive details. Typically, a concise format like `<type>: <description>` is sufficient.
